@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Analytics Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Website Analytics Dashboard</h1>
+            <p>Real-time visitor tracking</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Visits</h3>
+                <div id="totalVisits" class="stat-number">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Unique Visitors</h3>
+                <div id="uniqueVisitors" class="stat-number">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Today</h3>
+                <div id="todayVisits" class="stat-number">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Bounce Rate</h3>
+                <div id="bounceRate" class="stat-number">0%</div>
+            </div>
+        </div>
+
+        <div class="recent-visitors">
+            <h3>Recent Visitors</h3>
+            <div id="visitorList"></div>
+        </div>
+
+        <div class="export-section">
+            <button onclick="exportData()">📊 Export Data (JSON)</button>
+            <button onclick="clearData()">🗑️ Clear All Data</button>
+        </div>
+    </div>
+
+    <script src="tracker.js"></script>
+</body>
+</html>
